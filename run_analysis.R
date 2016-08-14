@@ -73,11 +73,11 @@ for (i in 1:length(colNames))
   colNames[i] = gsub("^(f)","freq",colNames[i])
   colNames[i] = gsub("([Gg]ravity)","Gravity",colNames[i])
   colNames[i] = gsub("([Bb]ody[Bb]ody|[Bb]ody)","Body",colNames[i])
-  colNames[i] = gsub("[Gy]mpo","Gympo",colNames[i])
-  colNames[i] = gsub("Aympo","Aypotential",colNames[i])
-  colNames[i] = gsub("([Bb]odypotential)","Bodypotential",colNames[i])
-  colNames[i] = gsub("Jackpo","Jackpotential",colNames[i])
-  colNames[i] = gsub("Gyropo","Gyropotential",colNames[i])
+  colNames[i] = gsub("[Gg]yro","Gyro",colNames[i])
+  colNames[i] = gsub("AccMag","AccMagnitude",colNames[i])
+  colNames[i] = gsub("([Bb]odyaccjerkmag)","BodyAccJerkMagnitude",colNames[i])
+  colNames[i] = gsub("JerkMag","JerkMagnitude",colNames[i])
+  colNames[i] = gsub("GyroMag","GyroMagnitude",colNames[i])
 };
 
 # Reassigning the new descriptive column names to the finalData set
